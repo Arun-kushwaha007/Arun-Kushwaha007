@@ -3,7 +3,7 @@
 ### 👨🏻‍💻 &nbsp;About Me 
 - 🎓 &nbsp; Pursuing my Bachelors in Electronic and Communication Engineering from National Institute of Technology, Hamirpur
 - 💼 &nbsp; Always looking to collaborate on amazing projects!
-- 🌱 &nbsp; Frontend Developer and Hobby AR/VR Develpment Enthusiast.
+- 🌱 &nbsp; Web Developer and Hobby AR/VR Develpment Enthusiast.
 
 ### ⚙️ &nbsp;GitHub Analytics
 <br>
