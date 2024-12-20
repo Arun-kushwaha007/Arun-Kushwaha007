@@ -20,7 +20,7 @@
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arun-kushwaha007&layout=compact&theme=radical&hide_border=true" alt="Top Languages" style="width:40%;" />
     <br><br>
     <!-- GitHub Contribution Graph -->
-    <img src="https://github-readme-activity-graph.cyclic.app/graph?username=Arun-kushwaha007&theme=github&hide_border=true&count_private=true" alt="GitHub Activity Graph" style="width:40%;" />
+    <!-- <img src="https://github-readme-activity-graph.cyclic.app/graph?username=Arun-kushwaha007&theme=github&hide_border=true&count_private=true" alt="GitHub Activity Graph" style="width:40%;" /> -->
   </p>
 </a>
 
