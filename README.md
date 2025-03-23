@@ -77,16 +77,16 @@
 ### 🤝 &nbsp;Connect with Me
 Want to reach out to me? Feel free to contact me!</p>
 <div align="left">
-  <a href="https://www.linkedin.com/in/arun-kushwaha-941638254/">
+  <a href="https://www.linkedin.com/in/arun-kushwaha-394b5a340/">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="LinkedIn logo" />
   </a>
   <a href="mailto:arunsk1310@gmail.com">
     <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="Gmail logo" />
   </a>
-  <a href="https://www.instagram.com/arun_kushwaha/">
+  <a href="https://www.instagram.com/_arun_kush.007/profilecard/?igsh=MW5neDY1cmJ6dXRhaQ==">
     <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="Instagram logo" />
   </a>
-  <a href="https://x.com/ArunKus22760101">
+  <a href="https://x.com/Arunkush00?s=08">
     <img src="https://img.shields.io/static/v1?message=Twitter&logo=twitter&label=&color=1DA1F2&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="Twitter logo" />
   </a>
 </div>
