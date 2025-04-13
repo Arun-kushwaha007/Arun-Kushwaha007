@@ -1,97 +1,118 @@
-<h2>Hey! My name is Arun Kushwaha. 👋</h2>
+<h1 align="center">Hi, I'm Arun Kushwaha 👋</h1>
+<h3 align="center">Electronics & Communication Engineering | Full-Stack Dev | DevOps | DroneTech</h3>
 
-### 👨‍💻 &nbsp;About Me
-- 🎓 &nbsp; Pursuing my Bachelors in Electronic and Communication Engineering from National Institute of Technology, Hamirpur
-- 🎼 &nbsp; Always looking to collaborate on amazing projects!
-- 🌱 &nbsp; Web Developer | Hobbyist AR/VR Development Enthusiast | Exploring AI, Drone Technologies, and DevOps
-- 🚀 &nbsp; Currently working on cutting-edge drone-based landslide detection projects using Lidar, GPR, and thermal imaging.
+---
 
-### ⚙️ &nbsp;GitHub Analytics
-<br>
-<a href="https://github.com/Arun-kushwaha007">
-  <p align="center">
-    <img src="https://github-readme-streak-stats.herokuapp.com?user=Arun-kushwaha007&theme=dark&hide_border=true" alt="Arun Kushwaha's GitHub Streak" style="width:40%;" />
-    <br><br>
-    <img src="https://github-readme-stats.vercel.app/api?username=Arun-kushwaha007&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="Arun Kushwaha Stats" style="width:40%;" />
-    <br><br>
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arun-kushwaha007&layout=compact&theme=radical&hide_border=true" alt="Top Languages" style="width:40%;" />
-  </p>
-</a>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=1000&color=F75C7E&center=true&vCenter=true&width=435&lines=Tech+Explorer;MERN+Stack+Dev;Drone+Tech+Enthusiast;DevOps+Learner;Open+Source+Lover+%F0%9F%A4%97" alt="Typing SVG" />
+</p>
 
-### 🛠 &nbsp;Tech Stack
-<div align="left">
-   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="JavaScript logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" alt="React logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="HTML5 logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="CSS3 logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" height="30" alt="Arduino logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" height="30" alt="Blender logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="30" alt="Bootstrap logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="30" alt="C logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="30" alt="C++ logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="Git logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="30" alt="GitHub logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" height="30" alt="Unity logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" height="30" alt="Tailwind CSS logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" height="30" alt="Three.js logo" />
+---
 
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="30" alt="Node.js logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="30" alt="Express logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="30" alt="MongoDB logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="30" alt="Docker logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="30" alt="Linux logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vagrant/vagrant-original.svg" height="30" alt="Vagrant logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="Git logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" height="30" alt="Kubernetes logo" />
-  <img width="12" />
- 
-</div>
+## 🚀 About Me
 
-### 🚀 &nbsp;Currently Working On:
-- **Drone-based Landslide Detection and Rescue:** Developing a multi-modal detection system with Lidar, GPR, and AI-powered detection for rapid deployment in disaster-prone regions.
-- **Real-time Chat Systems:** Building collaborative spaces for users with advanced features.
-- **DevOps & Cloud:** Learning Docker, Kubernetes, Terraform, and Vagrant for cloud infrastructure automation.
-- **AR/VR Projects:** Exploring Augmented Reality (AR) and Virtual Reality (VR) for innovative and interactive experiences.
+- 🎓 Pre-Final-year B.Tech student at **NIT Hamirpur**, Electronics & Communication Engineering
+- 🛠️ Building real-world **tech solutions** using **Web Development**, **DevOps**, and **Drone-based systems**
+- 🌍 Passionate about **AI/ML**, **GPR**, **Lidar**, **Thermal Imaging**, **AR/VR**, and **Open Source**
+- ✨ Always looking to collaborate on **impactful** and **innovative** projects
 
-### 🤝 &nbsp;Connect with Me
-Want to reach out to me? Feel free to contact me!</p>
-<div align="left">
-  <a href="https://www.linkedin.com/in/arun-kushwaha-394b5a340/">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="LinkedIn logo" />
+---
+
+## 🧠 Currently Working On
+
+- 🛰️ **Landslide Detection & Rescue System** using **GPR, Lidar, AI & Thermal Imaging**
+- 💬 **Real-time Chat System** with secure, scalable architecture
+- 🧰 **DevOps pipelines** using Docker, Vagrant, and Kubernetes
+- 🕶️ **AR/VR Projects** for educational simulations
+
+---
+
+## 🛠️ Tech Stack
+
+### 💻 Languages
+<p>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white"/>
+  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+</p>
+
+### 🌐 Frontend
+<p>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=three.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white"/>
+</p>
+
+### 🧠 Backend & Database
+<p>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+</p>
+
+### 🧰 DevOps & Tools
+<p>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Vagrant-1563FF?style=flat-square&logo=vagrant&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/>
+</p>
+
+### 🔬 Others
+<p>
+  <img src="https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Blender-F5792A?style=flat-square&logo=blender&logoColor=white"/>
+  <img src="https://img.shields.io/badge/OpenCV-27338e?style=flat-square&logo=opencv&logoColor=white"/>
+</p>
+
+---
+
+## 📈 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Arun-kushwaha007&theme=tokyonight&hide_border=true" width="47%"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=Arun-kushwaha007&show_icons=true&theme=tokyonight&hide_border=true" width="47%"/>
+</p>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arun-kushwaha007&layout=compact&theme=tokyonight&hide_border=true" width="47%" />
+</p>
+
+---
+
+## 📫 Connect With Me
+
+<p>
+  <a href="https://www.linkedin.com/in/arun-kushwaha-394b5a340/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
   </a>
-  <a href="mailto:arunsk1310@gmail.com">
-    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="Gmail logo" />
+  <a href="mailto:arunsk1310@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white" />
   </a>
-  <a href="https://www.instagram.com/_arun_kush.007/profilecard/?igsh=MW5neDY1cmJ6dXRhaQ==">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="Instagram logo" />
+  <a href="https://x.com/Arunkush00?s=08" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white" />
   </a>
-  <a href="https://x.com/Arunkush00?s=08">
-    <img src="https://img.shields.io/static/v1?message=Twitter&logo=twitter&label=&color=1DA1F2&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="Twitter logo" />
+  <a href="https://www.instagram.com/_arun_kush.007/" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" />
   </a>
-</div>
+</p>
 
-### 🎯 &nbsp;My Future Goals:
-- Mastering **DevOps** practices to streamline development workflows.
-- Continuing to explore **AI/ML** and **autonomous systems**.
-- Building a **full-stack drone-based system** to revolutionize disaster management.
+---
+
+## 🎯 Goals for 2025
+
+- ✅ Build and deploy a full-stack drone-based disaster response system
+- 🚀 Master container orchestration with **Kubernetes**
+- 🔬 Explore **Edge AI** and real-time object detection
+- 🕶️ Release an **AR/VR simulation** for engineering education
+- 🤝 Collaborate in more **Open Source** and **Hackathons**
+
+---
+
+<p align="center">🔥 Let's build the future together!</p>
