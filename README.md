@@ -77,11 +77,13 @@
 ## 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Arun-kushwaha007&theme=tokyonight&hide_border=true" width="47%"/>
+ <img src="https://github-readme-streak-stats.herokuapp.com/?user=Arun-kushwaha007&theme=tokyonight&hide_border=true&dates=all" width="47%"/>
+
   <img src="https://github-readme-stats.vercel.app/api?username=Arun-kushwaha007&show_icons=true&theme=tokyonight&hide_border=true" width="47%"/>
 </p>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arun-kushwaha007&layout=compact&theme=tokyonight&hide_border=true" width="47%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arun-kushwaha007&langs_count=100&theme=tokyonight&hide_border=true" width="47%" />
+
 </p>
 
 ---
