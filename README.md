@@ -17,31 +17,29 @@
 
 ---
 
-## 📌 Pinned Projects
+## 🚧 Operations in Progress
 
-> **Check out my top projects below! Each repo includes a detailed README, setup guide, and demo.**
+### ✅ Completed Projects
 
-- [**TerraSearch**](#)  
-  *Drone-based Landslide Detection using AI, GPR, Lidar, and Thermal Imaging*  
-  _Tech: React, Node.js, Python, OpenCV, Docker, AWS_  
-  **Impact:** Finalist at Rajasthan Police Hackathon (Top 10/500+ teams)
+| Project                          | Tech                                | Highlights                           |
+|:---------------------------------|:------------------------------------|:-------------------------------------|
+| **AI-based FIR Analyzer**                | React, Node.js, Python, NLP, Docker, AWS | Finalist at Rajasthan Police Hackathon (Top 10/500+ teams) |
+| **Dog Holiday Run**   | JavaScript (Canvas), HTML, CSS | Black-and-white endless runner with quirky enemies & retro arcade feel    |
+| **Stack Overflow Clone**         | MERN Stack, Redux, CI/CD           | Built a collaborative Q&A platform with role-based auth and code-friendly editor |
+| **Real-Time Chat System**        | Node.js, Socket.io, Mongodb | Secure, scalable architecture        |
+---
 
-- [**Stack Overflow Clone**](#)  
-  *A full-featured Q&A platform with authentication, voting, and search*  
-  _Tech: MERN Stack, Docker, CI/CD_  
-  **Impact:** Used by 100+ students for peer learning
+### 🚀 Active Projects
 
-- [**AI-based FIR Analyzer**](#)  
-  *Automated analysis and visualization of FIR reports for law enforcement*  
-  _Tech: Python, NLP, MongoDB, Streamlit_
-
-- [**Real-Time Chat System**](#)  
-  *Scalable, secure chat with end-to-end encryption and Dockerized deployment*  
-  _Tech: Node.js, Socket.io, Docker, Kubernetes_
-
-> _See more in my pinned repositories!_
+| Project                          | Tech                                | Status         |
+|:---------------------------------|:------------------------------------|:---------------|
+| **CollabNest (Team Dashboard)**  | MERN, Redux, Socket.io, Radis, AI Integration | In Development |
+| **Drone-Based Rescue System**    | Embedded C, Hardware(lidar, GPR, Drone)                | Building       |
+| **Video to Audio Python Microservices App on Kubernetes)**      | Kubernetes, Docker, Postgresql, RabbitMQ, Python                    | In Development |
+| **MY Own Redis**      |  C/C++                     | Research Phase |
 
 ---
+
 
 ## 🛠️ Tech Stack
 
