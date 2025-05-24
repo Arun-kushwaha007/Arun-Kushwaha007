@@ -57,7 +57,7 @@
 | **AI-based FIR Analyzer** | React, Node.js, Python, NLP, Docker, AWS | Finalist @ Rajasthan Police Hackathon | [Repo](https://github.com/Arun-kushwaha007/RJPOLICE_HACK_991_The-Crusade_4)  |
 | **Dog Holiday Run** | JS (Canvas), HTML, CSS | Endless runner with quirky enemies | [Repo](https://github.com/Arun-kushwaha007/Dog-Hoiday-Run) / [Demo](https://arun-kushwaha007.github.io/Dog-Hoiday-Run/) |
 | **Stack Overflow Clone** | MERN, Redux, CI/CD | Collaborative Q&A with auth/editor | [Repo](https://github.com/Arun-kushwaha007/Stack-Overflow-Clone) |
-| **Real-Time Chat System** | Node.js, Socket.io, MongoDB | Secure, scalable chat | [Repo](https://github.com/Arun-kushwaha007/RealTime-Chat-app) / [Demo](https://real-time-chat-app-client-taupe.vercel.app/login) |
+| **Real-Time Chat System** | Node.js, Socket.io, MongoDB | Secure, scalable chat | [Repo](https://github.com/Arun-kushwaha007/RealTime-Chat-app) / [Demo](https://real-time-chat-app-client-taupe.vercel.app/) |
 
 ### 🚀 Active
 
