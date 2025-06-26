@@ -63,7 +63,7 @@
 
 | Project | Tech | Status | Links |
 |:---|:---|:---|:---|
-| **CollabNest (Team Dashboard)** | MERN, Redux, Socket.io, Redis, AI | In Development | [Repo](https://github.com/Arun-kushwaha007/Deadline) |
+| **CollabNest (Team Dashboard)** | MERN, Redux, Socket.io, Redis, AI | In Development | [Repo](https://github.com/Arun-kushwaha007/Deadline) | [Demo](https://collab-nest-home.vercel.app/) |
 | **Drone-Based Rescue System** | Embedded C, Hardware (lidar, GPR, Drone) | Building | [Repo](https://github.com/Arun-kushwaha007/TerraSearch)  |
 | **Video to Audio Microservices** | Kubernetes, Docker, PostgreSQL, RabbitMQ, Python | In Development | [Repo](https://github.com/Arun-kushwaha007/Video-to-Audio-Python-Microservices-App-on-Kubernetes)  |
 | **MY Own Database (Redis)** | C/C++ | Research Phase |  [Repo](https://github.com/Arun-kushwaha007/MY_Own_Database)  |
