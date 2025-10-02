@@ -153,6 +153,9 @@
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=Arun-kushwaha007&theme=radical&no-frame=true&no-bg=true&margin-w=4&row=2&column=4" alt="GitHub Trophies"/>
 </p>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Arun-kushwaha007&bg_color=0d1117&color=ff6b35&line=58a6ff&point=ff6b35&area=true&hide_border=true" alt="Activity Graph"/>
+</p>
 
 ### 📈 **Performance Metrics**
 <table>
@@ -178,6 +181,7 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arun-kushwaha007&layout=compact&theme=radical&hide_border=true&langs_count=12&custom_title=Most%20Used%20Languages&title_color=FF6B35" alt="Top Languages"/>
 </p>
+
 
 ---
 
