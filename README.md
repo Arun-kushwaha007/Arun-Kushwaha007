@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://arun-one-page-portfolio.vercel.app/" target="_blank">
+  <a href="https://www.arunkushwaha.xyz/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-One--Page-000000?style=flat-square&logo=vercel&logoColor=white"/>
   </a>
   <a href="https://portfolio-arun-qdkm.vercel.app/" target="_blank">
