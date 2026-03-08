@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const username = process.env.GH_USERNAME || process.env.GITHUB_REPOSITORY_OWNER || 'Arun-kushwaha007';
+const statsStartYear = Number(process.env.GH_STATS_START_YEAR || 2023);
 const token = process.env.GITHUB_TOKEN;
 
 if (!token) {
@@ -132,7 +133,7 @@ function calcStreaks(contributionByDate) {
   return { currentStreak: current, longestStreak: longest };
 }
 
-async function getContributionMetrics(login, createdAtIso) {
+async function getContributionMetrics(login, startYear) {
   const query = `
     query ContributionSlice($login: String!, $from: DateTime!, $to: DateTime!) {
       user(login: $login) {
@@ -151,15 +152,17 @@ async function getContributionMetrics(login, createdAtIso) {
     }
   `;
 
-  const createdAt = startOfUtcDay(new Date(createdAtIso));
+  const safeStartYear = Number.isFinite(startYear) ? Math.floor(startYear) : 2023;
+  const firstDay = startOfUtcDay(new Date(Date.UTC(safeStartYear, 0, 1)));
   const today = startOfUtcDay(new Date());
 
-  let sliceStart = createdAt;
+  let sliceStart = firstDay;
   let totalCommits = 0;
   const contributionByDate = new Map();
 
   while (sliceStart <= today) {
-    const oneYearMinusOneDay = addUtcDays(addUtcYears(sliceStart, 1), -1);
+    const yearStart = startOfUtcDay(new Date(Date.UTC(sliceStart.getUTCFullYear(), 0, 1)));
+    const oneYearMinusOneDay = addUtcDays(addUtcYears(yearStart, 1), -1);
     const sliceEnd = minDate(oneYearMinusOneDay, today);
 
     const from = new Date(Date.UTC(sliceStart.getUTCFullYear(), sliceStart.getUTCMonth(), sliceStart.getUTCDate(), 0, 0, 0)).toISOString();
@@ -177,7 +180,7 @@ async function getContributionMetrics(login, createdAtIso) {
       }
     }
 
-    sliceStart = addUtcDays(sliceEnd, 1);
+    sliceStart = startOfUtcDay(new Date(Date.UTC(sliceStart.getUTCFullYear() + 1, 0, 1)));
   }
 
   const { currentStreak, longestStreak } = calcStreaks(contributionByDate);
@@ -332,7 +335,7 @@ async function main() {
   const totalBytes = langItems.reduce((sum, l) => sum + l.bytes, 0);
   const updatedAt = utcNowStamp();
 
-  const contribution = await getContributionMetrics(username, user.created_at);
+  const contribution = await getContributionMetrics(username, statsStartYear);
 
   const fs = await import('node:fs/promises');
   await fs.mkdir('assets', { recursive: true });

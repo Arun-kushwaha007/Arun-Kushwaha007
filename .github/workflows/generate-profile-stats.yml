@@ -28,6 +28,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USERNAME: Arun-kushwaha007
+          GH_STATS_START_YEAR: '2023'
         run: node scripts/generate-stats.mjs
 
       - name: Commit updated assets
