@@ -23,6 +23,28 @@ async function gh(url) {
   return res.json();
 }
 
+async function gql(query, variables) {
+  const res = await fetch('https://api.github.com/graphql', {
+    method: 'POST',
+    headers: {
+      ...headers,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ query, variables }),
+  });
+
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`GitHub GraphQL error ${res.status}: ${text}`);
+  }
+
+  const body = await res.json();
+  if (body.errors?.length) {
+    throw new Error(`GitHub GraphQL returned errors: ${JSON.stringify(body.errors)}`);
+  }
+  return body.data;
+}
+
 function esc(s) {
   return String(s)
     .replace(/&/g, '&amp;')
@@ -54,37 +76,175 @@ function palette(i) {
   return colors[i % colors.length];
 }
 
-function statsSvg({ username, publicRepos, followers, following, totalStars, totalForks, totalWatchers, updatedAt }) {
+function dayIso(d) {
+  const pad = (v) => String(v).padStart(2, '0');
+  return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}`;
+}
+
+function startOfUtcDay(d) {
+  return new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()));
+}
+
+function addUtcDays(d, days) {
+  const x = new Date(d);
+  x.setUTCDate(x.getUTCDate() + days);
+  return x;
+}
+
+function addUtcYears(d, years) {
+  const x = new Date(d);
+  x.setUTCFullYear(x.getUTCFullYear() + years);
+  return x;
+}
+
+function minDate(a, b) {
+  return a <= b ? a : b;
+}
+
+function calcStreaks(contributionByDate) {
+  const entries = [...contributionByDate.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+
+  let longest = 0;
+  let running = 0;
+
+  for (const [, count] of entries) {
+    if (count > 0) {
+      running += 1;
+      if (running > longest) longest = running;
+    } else {
+      running = 0;
+    }
+  }
+
+  let current = 0;
+  let cursor = startOfUtcDay(new Date());
+  if ((contributionByDate.get(dayIso(cursor)) || 0) <= 0) {
+    cursor = addUtcDays(cursor, -1);
+  }
+  for (;;) {
+    const key = dayIso(cursor);
+    const count = contributionByDate.get(key) || 0;
+    if (count <= 0) break;
+    current += 1;
+    cursor = addUtcDays(cursor, -1);
+  }
+
+  return { currentStreak: current, longestStreak: longest };
+}
+
+async function getContributionMetrics(login, createdAtIso) {
+  const query = `
+    query ContributionSlice($login: String!, $from: DateTime!, $to: DateTime!) {
+      user(login: $login) {
+        contributionsCollection(from: $from, to: $to) {
+          totalCommitContributions
+          contributionCalendar {
+            weeks {
+              contributionDays {
+                date
+                contributionCount
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const createdAt = startOfUtcDay(new Date(createdAtIso));
+  const today = startOfUtcDay(new Date());
+
+  let sliceStart = createdAt;
+  let totalCommits = 0;
+  const contributionByDate = new Map();
+
+  while (sliceStart <= today) {
+    const oneYearMinusOneDay = addUtcDays(addUtcYears(sliceStart, 1), -1);
+    const sliceEnd = minDate(oneYearMinusOneDay, today);
+
+    const from = new Date(Date.UTC(sliceStart.getUTCFullYear(), sliceStart.getUTCMonth(), sliceStart.getUTCDate(), 0, 0, 0)).toISOString();
+    const to = new Date(Date.UTC(sliceEnd.getUTCFullYear(), sliceEnd.getUTCMonth(), sliceEnd.getUTCDate(), 23, 59, 59)).toISOString();
+
+    const data = await gql(query, { login, from, to });
+    const cc = data.user.contributionsCollection;
+
+    totalCommits += cc.totalCommitContributions || 0;
+
+    const weeks = cc.contributionCalendar?.weeks || [];
+    for (const week of weeks) {
+      for (const day of week.contributionDays || []) {
+        contributionByDate.set(day.date, Number(day.contributionCount) || 0);
+      }
+    }
+
+    sliceStart = addUtcDays(sliceEnd, 1);
+  }
+
+  const { currentStreak, longestStreak } = calcStreaks(contributionByDate);
+  return { totalCommits, currentStreak, longestStreak };
+}
+
+function statsSvg({
+  username,
+  publicRepos,
+  followers,
+  following,
+  totalStars,
+  totalForks,
+  totalWatchers,
+  totalCommits,
+  currentStreak,
+  longestStreak,
+  updatedAt,
+}) {
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg width="600" height="320" viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GitHub stats card">
+<svg width="600" height="372" viewBox="0 0 600 372" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GitHub stats card">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0d1117"/>
       <stop offset="100%" stop-color="#161b22"/>
     </linearGradient>
   </defs>
-  <rect x="0.5" y="0.5" rx="16" ry="16" width="599" height="319" fill="url(#bg)" stroke="#30363d"/>
-  <text x="28" y="42" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">${esc(username)} • GitHub Stats</text>
+  <rect x="0.5" y="0.5" rx="16" ry="16" width="599" height="371" fill="url(#bg)" stroke="#30363d"/>
+  <text x="24" y="36" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">${esc(username)} • GitHub Snapshot</text>
 
-  <text x="28" y="88" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="15">Public Repos</text>
-  <text x="28" y="116" fill="#58a6ff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">${n(publicRepos)}</text>
+  <rect x="24" y="54" width="176" height="84" rx="10" fill="#1f2937" stroke="#30363d"/>
+  <text x="36" y="78" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13">Total Commits</text>
+  <text x="36" y="112" fill="#58a6ff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">${n(totalCommits)}</text>
 
-  <text x="220" y="88" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="15">Followers</text>
-  <text x="220" y="116" fill="#58a6ff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">${n(followers)}</text>
+  <rect x="212" y="54" width="176" height="84" rx="10" fill="#1f2937" stroke="#30363d"/>
+  <text x="224" y="78" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13">Current Streak</text>
+  <text x="224" y="112" fill="#ff6b35" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">${n(currentStreak)} days</text>
 
-  <text x="390" y="88" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="15">Following</text>
-  <text x="390" y="116" fill="#58a6ff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">${n(following)}</text>
+  <rect x="400" y="54" width="176" height="84" rx="10" fill="#1f2937" stroke="#30363d"/>
+  <text x="412" y="78" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13">Longest Streak</text>
+  <text x="412" y="112" fill="#ff6b35" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">${n(longestStreak)} days</text>
 
-  <text x="28" y="170" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="15">Total Stars</text>
-  <text x="28" y="198" fill="#ff6b35" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">${n(totalStars)}</text>
+  <rect x="24" y="150" width="176" height="84" rx="10" fill="#111827" stroke="#30363d"/>
+  <text x="36" y="174" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13">Public Repos</text>
+  <text x="36" y="208" fill="#7ee787" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">${n(publicRepos)}</text>
 
-  <text x="220" y="170" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="15">Total Forks</text>
-  <text x="220" y="198" fill="#ff6b35" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">${n(totalForks)}</text>
+  <rect x="212" y="150" width="176" height="84" rx="10" fill="#111827" stroke="#30363d"/>
+  <text x="224" y="174" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13">Followers</text>
+  <text x="224" y="208" fill="#7ee787" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">${n(followers)}</text>
 
-  <text x="390" y="170" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="15">Watchers</text>
-  <text x="390" y="198" fill="#ff6b35" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">${n(totalWatchers)}</text>
+  <rect x="400" y="150" width="176" height="84" rx="10" fill="#111827" stroke="#30363d"/>
+  <text x="412" y="174" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13">Following</text>
+  <text x="412" y="208" fill="#7ee787" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">${n(following)}</text>
 
-  <text x="28" y="278" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13">Auto-generated via GitHub Actions • Updated: ${esc(updatedAt)}</text>
+  <rect x="24" y="246" width="176" height="84" rx="10" fill="#1a2230" stroke="#30363d"/>
+  <text x="36" y="270" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13">Total Stars</text>
+  <text x="36" y="304" fill="#d2a8ff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">${n(totalStars)}</text>
+
+  <rect x="212" y="246" width="176" height="84" rx="10" fill="#1a2230" stroke="#30363d"/>
+  <text x="224" y="270" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13">Total Forks</text>
+  <text x="224" y="304" fill="#d2a8ff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">${n(totalForks)}</text>
+
+  <rect x="400" y="246" width="176" height="84" rx="10" fill="#1a2230" stroke="#30363d"/>
+  <text x="412" y="270" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13">Watchers</text>
+  <text x="412" y="304" fill="#d2a8ff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">${n(totalWatchers)}</text>
+
+  <text x="24" y="354" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12">Auto-generated from GitHub API • Updated: ${esc(updatedAt)}</text>
 </svg>`;
 }
 
@@ -172,6 +332,8 @@ async function main() {
   const totalBytes = langItems.reduce((sum, l) => sum + l.bytes, 0);
   const updatedAt = utcNowStamp();
 
+  const contribution = await getContributionMetrics(username, user.created_at);
+
   const fs = await import('node:fs/promises');
   await fs.mkdir('assets', { recursive: true });
 
@@ -185,6 +347,9 @@ async function main() {
       totalStars: totals.stars,
       totalForks: totals.forks,
       totalWatchers: totals.watchers,
+      totalCommits: contribution.totalCommits,
+      currentStreak: contribution.currentStreak,
+      longestStreak: contribution.longestStreak,
       updatedAt,
     }),
     'utf8'
