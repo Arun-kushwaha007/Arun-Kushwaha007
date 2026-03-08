@@ -151,8 +151,8 @@ Shipped reviewed, merged PRs improving production shell hygiene in a large OSS c
 </p>
 
 <p align="center">
-  <img width="48%" src="./assets/github-stats.svg" alt="Arun GitHub Stats" />
-  <img width="48%" src="./assets/top-langs.svg" alt="Arun Top Languages" />
+  <img width="48%" src="https://raw.githubusercontent.com/Arun-kushwaha007/Arun-Kushwaha007/main/assets/github-stats.svg" alt="Arun GitHub Stats" />
+  <img width="48%" src="https://raw.githubusercontent.com/Arun-kushwaha007/Arun-Kushwaha007/main/assets/top-langs.svg" alt="Arun Top Languages" />
 </p>
 
 ---
