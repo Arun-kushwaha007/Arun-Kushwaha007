@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="320" viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0.5" y="0.5" rx="16" ry="16" width="599" height="319" fill="#0d1117" stroke="#30363d"/>
+  <text x="28" y="46" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Arun-kushwaha007 • Top Languages</text>
+  <text x="28" y="90" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="16">Initial card generated. Language share will update automatically.</text>
+  <text x="28" y="124" fill="#ff6b35" font-family="Segoe UI, Arial, sans-serif" font-size="18">Data source: GitHub API (no third-party stats service)</text>
+</svg>

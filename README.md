@@ -151,8 +151,8 @@ Shipped reviewed, merged PRs improving production shell hygiene in a large OSS c
 </p>
 
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Arun-kushwaha007&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" />
-  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arun-kushwaha007&layout=compact&theme=radical&hide_border=true&langs_count=8" />
+  <img width="48%" src="./assets/github-stats.svg" alt="Arun GitHub Stats" />
+  <img width="48%" src="./assets/top-langs.svg" alt="Arun Top Languages" />
 </p>
 
 ---
