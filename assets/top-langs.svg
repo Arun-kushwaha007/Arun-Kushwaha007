@@ -9,12 +9,12 @@
   <rect x="0.5" y="0.5" rx="16" ry="16" width="599" height="319" fill="url(#bg)" stroke="#30363d"/>
   <text x="28" y="42" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Arun-kushwaha007 • Top Languages</text>
   <rect x="28" y="70" width="544" height="18" rx="9" fill="#21262d"/>
-  <rect x="28.00" y="70" width="220.74" height="18" fill="#58a6ff"/>
-    <rect x="248.74" y="70" width="104.38" height="18" fill="#ff6b35"/>
-    <rect x="353.12" y="70" width="81.15" height="18" fill="#3fb950"/>
-    <rect x="434.27" y="70" width="57.71" height="18" fill="#d2a8ff"/>
-    <rect x="491.98" y="70" width="43.78" height="18" fill="#f2cc60"/>
-    <rect x="535.75" y="70" width="16.43" height="18" fill="#7ee787"/>
+  <rect x="28.00" y="70" width="220.71" height="18" fill="#58a6ff"/>
+    <rect x="248.71" y="70" width="104.43" height="18" fill="#ff6b35"/>
+    <rect x="353.15" y="70" width="81.14" height="18" fill="#3fb950"/>
+    <rect x="434.28" y="70" width="57.70" height="18" fill="#d2a8ff"/>
+    <rect x="491.98" y="70" width="43.77" height="18" fill="#f2cc60"/>
+    <rect x="535.76" y="70" width="16.42" height="18" fill="#7ee787"/>
     <rect x="552.18" y="70" width="9.92" height="18" fill="#ffa657"/>
     <rect x="562.10" y="70" width="2.86" height="18" fill="#79c0ff"/>
 
@@ -35,5 +35,5 @@
     <rect x="303" y="223" width="10" height="10" rx="2" fill="#79c0ff"/>
     <text x="319" y="234" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="14">HLSL 0.5%</text>
 
-  <text x="28" y="286" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13">Based on repo language bytes • Updated: 2026-03-09 13:13 UTC</text>
+  <text x="28" y="286" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13">Based on repo language bytes • Updated: 2026-03-10 02:24 UTC</text>
 </svg>
