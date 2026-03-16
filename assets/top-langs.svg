@@ -9,31 +9,31 @@
   <rect x="0.5" y="0.5" rx="16" ry="16" width="599" height="319" fill="url(#bg)" stroke="#30363d"/>
   <text x="28" y="42" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Arun-kushwaha007 • Top Languages</text>
   <rect x="28" y="70" width="544" height="18" rx="9" fill="#21262d"/>
-  <rect x="28.00" y="70" width="216.59" height="18" fill="#58a6ff"/>
-    <rect x="244.59" y="70" width="112.36" height="18" fill="#ff6b35"/>
-    <rect x="356.95" y="70" width="79.62" height="18" fill="#3fb950"/>
-    <rect x="436.57" y="70" width="56.62" height="18" fill="#d2a8ff"/>
-    <rect x="493.19" y="70" width="43.24" height="18" fill="#f2cc60"/>
-    <rect x="536.43" y="70" width="16.12" height="18" fill="#7ee787"/>
-    <rect x="552.55" y="70" width="9.73" height="18" fill="#ffa657"/>
-    <rect x="562.28" y="70" width="2.80" height="18" fill="#79c0ff"/>
+  <rect x="28.00" y="70" width="214.55" height="18" fill="#58a6ff"/>
+    <rect x="242.55" y="70" width="116.54" height="18" fill="#ff6b35"/>
+    <rect x="359.09" y="70" width="78.87" height="18" fill="#3fb950"/>
+    <rect x="437.96" y="70" width="56.09" height="18" fill="#d2a8ff"/>
+    <rect x="494.05" y="70" width="42.71" height="18" fill="#f2cc60"/>
+    <rect x="536.77" y="70" width="15.97" height="18" fill="#7ee787"/>
+    <rect x="552.73" y="70" width="9.64" height="18" fill="#ffa657"/>
+    <rect x="562.37" y="70" width="2.78" height="18" fill="#79c0ff"/>
 
   <rect x="28" y="121" width="10" height="10" rx="2" fill="#58a6ff"/>
-    <text x="44" y="132" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="14">JavaScript 39.8%</text>
+    <text x="44" y="132" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="14">JavaScript 39.4%</text>
     <rect x="28" y="155" width="10" height="10" rx="2" fill="#ff6b35"/>
-    <text x="44" y="166" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="14">TypeScript 20.7%</text>
+    <text x="44" y="166" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="14">TypeScript 21.4%</text>
     <rect x="28" y="189" width="10" height="10" rx="2" fill="#3fb950"/>
-    <text x="44" y="200" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="14">HTML 14.6%</text>
+    <text x="44" y="200" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="14">HTML 14.5%</text>
     <rect x="28" y="223" width="10" height="10" rx="2" fill="#d2a8ff"/>
-    <text x="44" y="234" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="14">C# 10.4%</text>
+    <text x="44" y="234" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="14">C# 10.3%</text>
     <rect x="303" y="121" width="10" height="10" rx="2" fill="#f2cc60"/>
     <text x="319" y="132" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="14">CSS 7.9%</text>
     <rect x="303" y="155" width="10" height="10" rx="2" fill="#7ee787"/>
-    <text x="319" y="166" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="14">ShaderLab 3.0%</text>
+    <text x="319" y="166" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="14">ShaderLab 2.9%</text>
     <rect x="303" y="189" width="10" height="10" rx="2" fill="#ffa657"/>
     <text x="319" y="200" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="14">Python 1.8%</text>
     <rect x="303" y="223" width="10" height="10" rx="2" fill="#79c0ff"/>
     <text x="319" y="234" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="14">HLSL 0.5%</text>
 
-  <text x="28" y="286" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13">Based on repo language bytes • Updated: 2026-03-15 13:01 UTC</text>
+  <text x="28" y="286" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13">Based on repo language bytes • Updated: 2026-03-16 02:46 UTC</text>
 </svg>
