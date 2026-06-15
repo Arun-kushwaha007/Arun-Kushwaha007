@@ -2,7 +2,7 @@
     <tr>
     <td width="25%" valign="top">
       <!-- DYNAMIC_GIF_START -->
-      <img src="https://raw.githubusercontent.com/Arun-kushwaha007/Arun-Kushwaha007/main/assets/sleep.gif" width="100%" alt="Dynamic GIF" id="dynamic-gif" />
+      <img src="https://raw.githubusercontent.com/Arun-kushwaha007/Arun-Kushwaha007/main/assets/hello.gif" width="100%" alt="Dynamic GIF" id="dynamic-gif" />
       <!-- DYNAMIC_GIF_END -->
     </td>
     <td width="80%" valign="top">
