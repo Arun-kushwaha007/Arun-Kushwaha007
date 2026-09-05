@@ -2,7 +2,7 @@
 <tr>
 <td width="25%" valign="top" align="center">
 <!-- DYNAMIC_GIF_START -->
-      <img src="https://raw.githubusercontent.com/Arun-kushwaha007/Arun-Kushwaha007/main/assets/evening.gif" width="100%" alt="Dynamic GIF" id="dynamic-gif" />
+      <img src="https://raw.githubusercontent.com/Arun-kushwaha007/Arun-Kushwaha007/main/assets/night.gif" width="100%" alt="Dynamic GIF" id="dynamic-gif" />
       <!-- DYNAMIC_GIF_END -->
 </td>
 <td width="75%" valign="top">
@@ -161,7 +161,7 @@
 <tr>
 <td width="30%" align="center" valign="middle">
 <!-- DYNAMIC_CUTE_GIF_START -->
-  <img src="https://raw.githubusercontent.com/Arun-kushwaha007/Arun-Kushwaha007/main/assets/cute/cute-parrot-shaking-head-gif.gif" width="160" alt="Dynamic Mood GIF" />
+  <img src="https://raw.githubusercontent.com/Arun-kushwaha007/Arun-Kushwaha007/main/assets/cute/punching-hand-through-laptop-gif.gif" width="160" alt="Dynamic Mood GIF" />
   <!-- DYNAMIC_CUTE_GIF_END -->
 <br/><br/>
 <b>Backend-first engineer.</b><br/>
