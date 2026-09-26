@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="840" height="340" viewBox="0 0 840 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Contribution Activity Graph">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0.0" />
+    </linearGradient>
+    <style>
+      @keyframes dash {
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .graph-line {
+        stroke-dasharray: 4000;
+        stroke-dashoffset: 4000;
+        animation: dash 2.5s ease-out forwards;
+      }
+      .graph-area {
+        animation: fadeIn 1.2s ease-in forwards;
+      }
+      .graph-point {
+        animation: fadeIn 1.2s ease-in forwards;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Card -->
+  <rect x="0.5" y="0.5" rx="16" ry="16" width="839" height="339" fill="url(#bg)" stroke="#30363d"/>
+
+  <!-- Header -->
+  <text x="24" y="38" fill="#ff6b35" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Arun-kushwaha007 • Contribution Graph</text>
+  <text x="816" y="36" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13" text-anchor="end">
+    Last 31 Days • <tspan fill="#58a6ff" font-weight="600">420</tspan> Total • Peak: <tspan fill="#ff6b35" font-weight="600">86</tspan>/day
+  </text>
+
+  <!-- Grid lines & Y Axis -->
+  
+    <line x1="65" y1="290.0" x2="800.0" y2="290.0" stroke="#21262d" stroke-dasharray="3,3" stroke-width="1" />
+    <text x="53.0" y="294.0" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="end">0</text>
+    <line x1="65" y1="235.0" x2="800.0" y2="235.0" stroke="#21262d" stroke-dasharray="3,3" stroke-width="1" />
+    <text x="53.0" y="239.0" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="end">30</text>
+    <line x1="65" y1="180.0" x2="800.0" y2="180.0" stroke="#21262d" stroke-dasharray="3,3" stroke-width="1" />
+    <text x="53.0" y="184.0" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="end">60</text>
+    <line x1="65" y1="125.0" x2="800.0" y2="125.0" stroke="#21262d" stroke-dasharray="3,3" stroke-width="1" />
+    <text x="53.0" y="129.0" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="end">90</text>
+    <line x1="65" y1="70.0" x2="800.0" y2="70.0" stroke="#21262d" stroke-dasharray="3,3" stroke-width="1" />
+    <text x="53.0" y="74.0" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="end">120</text>
+
+  <!-- X Axis labels -->
+  
+    <line x1="65.0" y1="290" x2="65.0" y2="295" stroke="#30363d" stroke-width="1" />
+    <text x="65.0" y="312" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="middle">Aug 27</text>
+    <line x1="89.5" y1="290" x2="89.5" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="114.0" y1="290" x2="114.0" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="138.5" y1="290" x2="138.5" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="163.0" y1="290" x2="163.0" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="187.5" y1="290" x2="187.5" y2="295" stroke="#30363d" stroke-width="1" />
+    <text x="187.5" y="312" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="middle">Sep 01</text>
+    <line x1="212.0" y1="290" x2="212.0" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="236.5" y1="290" x2="236.5" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="261.0" y1="290" x2="261.0" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="285.5" y1="290" x2="285.5" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="310.0" y1="290" x2="310.0" y2="295" stroke="#30363d" stroke-width="1" />
+    <text x="310.0" y="312" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="middle">Sep 06</text>
+    <line x1="334.5" y1="290" x2="334.5" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="359.0" y1="290" x2="359.0" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="383.5" y1="290" x2="383.5" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="408.0" y1="290" x2="408.0" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="432.5" y1="290" x2="432.5" y2="295" stroke="#30363d" stroke-width="1" />
+    <text x="432.5" y="312" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="middle">Sep 11</text>
+    <line x1="457.0" y1="290" x2="457.0" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="481.5" y1="290" x2="481.5" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="506.0" y1="290" x2="506.0" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="530.5" y1="290" x2="530.5" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="555.0" y1="290" x2="555.0" y2="295" stroke="#30363d" stroke-width="1" />
+    <text x="555.0" y="312" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="middle">Sep 16</text>
+    <line x1="579.5" y1="290" x2="579.5" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="604.0" y1="290" x2="604.0" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="628.5" y1="290" x2="628.5" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="653.0" y1="290" x2="653.0" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="677.5" y1="290" x2="677.5" y2="295" stroke="#30363d" stroke-width="1" />
+    <text x="677.5" y="312" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="middle">Sep 21</text>
+    <line x1="702.0" y1="290" x2="702.0" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="726.5" y1="290" x2="726.5" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="751.0" y1="290" x2="751.0" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="775.5" y1="290" x2="775.5" y2="295" stroke="#30363d" stroke-width="1" />
+    <line x1="800.0" y1="290" x2="800.0" y2="295" stroke="#30363d" stroke-width="1" />
+    <text x="800.0" y="312" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="middle">Sep 26</text>
+  <text x="432.5" y="330" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="middle">Days (Last 31 Days)</text>
+
+  <!-- Area under curve -->
+  <path class="graph-area" d="M 65.0 255.2 C 69.1 259.8, 81.3 280.2, 89.5 282.7 C 97.7 285.1, 105.8 269.5, 114.0 269.8 C 122.2 270.1, 130.3 289.4, 138.5 284.5 C 146.7 279.6, 154.8 243.9, 163.0 240.5 C 171.2 237.1, 179.3 259.4, 187.5 264.3 C 195.7 269.2, 203.8 271.7, 212.0 269.8 C 220.2 268.0, 228.3 252.7, 236.5 253.3 C 244.7 253.9, 252.8 268.0, 261.0 273.5 C 269.2 279.0, 277.3 283.9, 285.5 286.3 C 293.7 288.8, 301.8 290.0, 310.0 288.2 C 318.2 284.2, 326.3 265.9, 334.5 262.5 C 342.7 259.1, 350.8 289.7, 359.0 268.0 C 367.2 246.3, 375.3 132.6, 383.5 132.3 C 391.7 132.0, 399.8 245.1, 408.0 266.2 C 416.2 287.3, 424.3 258.2, 432.5 258.8 C 440.7 259.4, 448.8 264.9, 457.0 269.8 C 465.2 274.7, 473.3 290.0, 481.5 288.2 C 489.7 285.7, 497.8 257.3, 506.0 255.2 C 514.2 253.0, 522.3 273.5, 530.5 275.3 C 538.7 277.2, 546.8 267.7, 555.0 266.2 C 563.2 264.6, 571.3 264.0, 579.5 266.2 C 587.7 268.3, 595.8 276.9, 604.0 279.0 C 612.2 281.1, 620.3 278.7, 628.5 279.0 C 636.7 279.3, 644.8 282.1, 653.0 280.8 C 661.2 279.6, 669.3 273.2, 677.5 271.7 C 685.7 270.1, 693.8 272.3, 702.0 271.7 C 710.2 271.1, 718.3 271.4, 726.5 268.0 C 734.7 264.6, 742.8 254.3, 751.0 251.5 C 759.2 248.8, 767.3 245.1, 775.5 251.5 C 783.7 257.9, 795.9 283.6, 800.0 290.0 L 800.0 290 L 65.0 290 Z" fill="url(#areaGradient)" />
+
+  <!-- Smooth Line -->
+  <path class="graph-line" d="M 65.0 255.2 C 69.1 259.8, 81.3 280.2, 89.5 282.7 C 97.7 285.1, 105.8 269.5, 114.0 269.8 C 122.2 270.1, 130.3 289.4, 138.5 284.5 C 146.7 279.6, 154.8 243.9, 163.0 240.5 C 171.2 237.1, 179.3 259.4, 187.5 264.3 C 195.7 269.2, 203.8 271.7, 212.0 269.8 C 220.2 268.0, 228.3 252.7, 236.5 253.3 C 244.7 253.9, 252.8 268.0, 261.0 273.5 C 269.2 279.0, 277.3 283.9, 285.5 286.3 C 293.7 288.8, 301.8 290.0, 310.0 288.2 C 318.2 284.2, 326.3 265.9, 334.5 262.5 C 342.7 259.1, 350.8 289.7, 359.0 268.0 C 367.2 246.3, 375.3 132.6, 383.5 132.3 C 391.7 132.0, 399.8 245.1, 408.0 266.2 C 416.2 287.3, 424.3 258.2, 432.5 258.8 C 440.7 259.4, 448.8 264.9, 457.0 269.8 C 465.2 274.7, 473.3 290.0, 481.5 288.2 C 489.7 285.7, 497.8 257.3, 506.0 255.2 C 514.2 253.0, 522.3 273.5, 530.5 275.3 C 538.7 277.2, 546.8 267.7, 555.0 266.2 C 563.2 264.6, 571.3 264.0, 579.5 266.2 C 587.7 268.3, 595.8 276.9, 604.0 279.0 C 612.2 281.1, 620.3 278.7, 628.5 279.0 C 636.7 279.3, 644.8 282.1, 653.0 280.8 C 661.2 279.6, 669.3 273.2, 677.5 271.7 C 685.7 270.1, 693.8 272.3, 702.0 271.7 C 710.2 271.1, 718.3 271.4, 726.5 268.0 C 734.7 264.6, 742.8 254.3, 751.0 251.5 C 759.2 248.8, 767.3 245.1, 775.5 251.5 C 783.7 257.9, 795.9 283.6, 800.0 290.0" fill="none" stroke="#58a6ff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Data Points -->
+  
+    <circle class="graph-point" cx="65.0" cy="255.2" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-08-27: 19 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="89.5" cy="282.7" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-08-28: 4 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="114.0" cy="269.8" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-08-29: 11 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="138.5" cy="284.5" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-08-30: 3 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="163.0" cy="240.5" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-08-31: 27 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="187.5" cy="264.3" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-01: 14 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="212.0" cy="269.8" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-02: 11 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="236.5" cy="253.3" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-03: 20 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="261.0" cy="273.5" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-04: 9 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="285.5" cy="286.3" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-05: 2 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="310.0" cy="288.2" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-06: 1 contribution</title>
+    </circle>
+    <circle class="graph-point" cx="334.5" cy="262.5" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-07: 15 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="359.0" cy="268.0" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-08: 12 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="383.5" cy="132.3" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-09: 86 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="408.0" cy="266.2" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-10: 13 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="432.5" cy="258.8" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-11: 17 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="457.0" cy="269.8" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-12: 11 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="481.5" cy="288.2" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-13: 1 contribution</title>
+    </circle>
+    <circle class="graph-point" cx="506.0" cy="255.2" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-14: 19 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="530.5" cy="275.3" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-15: 8 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="555.0" cy="266.2" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-16: 13 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="579.5" cy="266.2" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-17: 13 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="604.0" cy="279.0" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-18: 6 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="628.5" cy="279.0" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-19: 6 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="653.0" cy="280.8" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-20: 5 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="677.5" cy="271.7" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-21: 10 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="702.0" cy="271.7" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-22: 10 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="726.5" cy="268.0" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-23: 12 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="751.0" cy="251.5" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-24: 21 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="775.5" cy="251.5" r="3.5" fill="#ff6b35" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-25: 21 contributions</title>
+    </circle>
+    <circle class="graph-point" cx="800.0" cy="290.0" r="2" fill="#30363d" stroke="#0d1117" stroke-width="1.5">
+      <title>2026-09-26: 0 contributions</title>
+    </circle>
+</svg>
