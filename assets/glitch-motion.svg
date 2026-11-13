@@ -1,0 +1,18 @@
+<svg width="400" height="100" xmlns="http://www.w3.org/2000/svg">
+<style>
+.t { font-family: sans-serif; font-size: 50px; font-weight: bold; fill: white; text-anchor: middle; dominant-baseline: middle; }
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+.g1 { fill: #ff00ff; animation: glitch 0.3s infinite; opacity: 0.5; }
+.g2 { fill: #00ffff; animation: glitch 0.3s infinite reverse; opacity: 0.5; }
+</style>
+<text x="50%" y="50%" class="t g1">Arun Kushwaha</text>
+<text x="50%" y="50%" class="t g2">Arun Kushwaha</text>
+<text x="50%" y="50%" class="t">Arun Kushwaha</text>
+</svg>
